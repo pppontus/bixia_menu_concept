@@ -1,3 +1,51 @@
 {
-    "title": "Meny 3"
+  "title": "Meny 3",
+  "categories": {
+    "private": [
+      {
+        "name": "Kategori 1",
+        "children": [
+          {
+            "name": "Underkategori 1.1",
+            "children": [
+              { "name": "Objekt 1.1.1" },
+              { "name": "Objekt 1.1.2" }
+            ]
+          },
+          {
+            "name": "Underkategori 1.2",
+            "children": [
+              { "name": "Objekt 1.2.1" },
+              { "name": "Objekt 1.2.2" }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Kategori 2",
+        "children": [
+          { "name": "Objekt 2.1" },
+          { "name": "Objekt 2.2" }
+        ]
+      },
+      { "name": "Tom kategori" }
+    ],
+    "corporate": [
+      {
+        "name": "Företagskategori 1",
+        "children": [
+          { "name": "Företagsobjekt 1.1" },
+          { "name": "Företagsobjekt 1.2" }
+        ]
+      },
+      {
+        "name": "Företagskategori 2",
+        "children": [
+          { "name": "Företagsobjekt 2.1" },
+          { "name": "Företagsobjekt 2.2" }
+        ]
+      },
+      { "name": "Tom företagskategori" }
+    ]
   }
+}
