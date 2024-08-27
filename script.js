@@ -25,9 +25,9 @@ function MenuItem({ item }) {
     );
 }
 
-function Footer({ links }) {
+function Footer({ links, isCorporateTheme }) {
     return (
-        <div className="bg-gray-100 py-6">
+        <div className={`py-6 ${isCorporateTheme ? 'bg-gray-700' : 'bg-gray-100'} transition-all duration-500 ease-in-out`}>
             <div className="container mx-auto px-4 max-w-3xl">
                 <div className="bg-white rounded-lg shadow-md p-6">
                     <div className="flex flex-col space-y-2">
@@ -47,6 +47,7 @@ function App() {
     const [menus, setMenus] = React.useState(null);
     const [selectedTab, setSelectedTab] = React.useState('menu1');
     const [selectedCategory, setSelectedCategory] = React.useState('private');
+    const [isCorporateTheme, setIsCorporateTheme] = React.useState(false);
 
     React.useEffect(() => {
         // Load all menu data upfront
@@ -59,6 +60,15 @@ function App() {
         }).catch(error => console.error('Error loading menu data:', error));
     }, []);
 
+    React.useEffect(() => {
+        // Switch the theme when the category changes
+        if (selectedCategory === 'corporate') {
+            setIsCorporateTheme(true);
+        } else {
+            setIsCorporateTheme(false);
+        }
+    }, [selectedCategory]);
+
     if (!menus) {
         return <div className="text-center mt-8 text-xl text-gray-600">Loading...</div>;
     }
@@ -66,7 +76,7 @@ function App() {
     const currentMenu = menus[selectedTab];
 
     return (
-        <div className="min-h-screen flex flex-col">
+        <div className={`min-h-screen flex flex-col ${isCorporateTheme ? 'bg-gray-700 text-gray-300' : 'bg-gray-100 text-gray-800'} transition-colors duration-500 ease-in-out`}>
             <div className="bg-gray-800 text-white">
                 <div className="container mx-auto px-4 max-w-3xl">
                     <div className="flex justify-start space-x-1">
@@ -86,25 +96,25 @@ function App() {
                     </div>
                 </div>
             </div>
-            <div className="flex-grow bg-gray-100">
+            <div className="flex-grow">
                 <div className="container mx-auto px-4 py-8 max-w-3xl">
                     <div className="mb-6 space-x-4">
                         <button 
                             onClick={() => setSelectedCategory('private')}
-                            className={`px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-custom-blue ${
+                            className={`px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-custom-blue transition-colors duration-200 ${
                                 selectedCategory === 'private' 
                                     ? 'bg-custom-blue text-white' 
-                                    : 'bg-white text-gray-700 hover:bg-gray-50'
+                                    : `bg-${isCorporateTheme ? 'gray-600' : 'white'} text-${isCorporateTheme ? 'gray-300' : 'gray-700'} hover:bg-${isCorporateTheme ? 'gray-500' : 'gray-50'}`
                             }`}
                         >
                             Privat
                         </button>
                         <button 
                             onClick={() => setSelectedCategory('corporate')}
-                            className={`px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-custom-blue ${
+                            className={`px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-custom-blue transition-colors duration-200 ${
                                 selectedCategory === 'corporate' 
                                     ? 'bg-custom-blue text-white' 
-                                    : 'bg-white text-gray-700 hover:bg-gray-50'
+                                    : `bg-${isCorporateTheme ? 'gray-600' : 'white'} text-${isCorporateTheme ? 'gray-300' : 'gray-700'} hover:bg-${isCorporateTheme ? 'gray-500' : 'gray-50'}`
                             }`}
                         >
                             Företag
@@ -117,13 +127,13 @@ function App() {
                     </div>
                     {/* Headline and Content Section */}
                     <div className="mt-8">
-                        <h1 className="text-3xl font-bold text-custom-blue mb-4">Rubrik</h1>
-                        <p className="text-lg text-gray-800">Här kommer hemsideinnehållet att vara.</p>
+                        <h1 className="text-3xl font-bold mb-4">Rubrik</h1>
+                        <p className="text-lg">Här kommer hemsideinnehållet att vara.</p>
                     </div>
                 </div>
             </div>
             {/* Footer */}
-            <Footer links={currentMenu.footerLinks} />
+            <Footer links={currentMenu.footerLinks} isCorporateTheme={isCorporateTheme} />
         </div>
     );
 }
