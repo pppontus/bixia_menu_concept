@@ -1,3 +1,14 @@
-"scripts": {
-  "start": "live-server ./"
-}
+{
+    "name": "bixia_menu_concept",
+    "version": "1.0.0",
+    "description": "A menu concept website using HTML, JavaScript (React), and JSON data.",
+    "main": "index.html",
+    "scripts": {
+      "start": "live-server ./"
+    },
+    "author": "Pontus Andersson",
+    "license": "MIT",
+    "dependencies": {},
+    "devDependencies": {}
+  }
+  
