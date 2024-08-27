@@ -1,0 +1,7 @@
+{
+    "name": "Static HTML",
+    "image": "mcr.microsoft.com/vscode/devcontainers/javascript-node:0-16",
+    "forwardPorts": [8080],
+    "postCreateCommand": "npm install -g http-server",
+    "postStartCommand": "http-server -p 8080"
+  }

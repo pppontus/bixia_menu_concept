@@ -1,0 +1,127 @@
+{
+  "title": "Meny 1",
+  "categories": {
+    "private": [
+      {
+        "name": "Villa",
+        "children": [
+          {
+            "name": "Elavtal",
+            "children": [
+              { "name": "Våra elavtal" },
+              { "name": "Flytt" },
+              { "name": "Elpriser" },
+              { "name": "Guide - Hjälp mig välja" }
+            ]
+          },
+          {
+            "name": "Solceller",
+            "children": [
+              { "name": "Solcellspaket" },
+              { "name": "Information om solceller" },
+              { "name": "Guide - Sparar jag på solceller?" }
+            ]
+          },
+          {
+            "name": "Batterilagring",
+            "children": [
+              { "name": "Batteripaket" },
+              { "name": "Information om batterilagring" },
+              { "name": "Guide - Sparar jag på hembatteri?" }
+            ]
+          },
+          {
+            "name": "Elbil",
+            "children": [
+              { "name": "Elbilsladdare" },
+              { "name": "Information om elbilsladdning" },
+              { "name": "Guide - Är elbil för mig?" }
+            ]
+          },
+          {
+            "name": "Kunskapscenter - Populära kategorier",
+            "children": [
+              { "name": "Sänk din elkostnad" },
+              { "name": "Minska din miljöpåverkan" },
+              { "name": "Allt om elbil" },
+              { "name": "Alla kategorier" }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Lägenhet",
+        "children": [
+          {
+            "name": "Elavtal",
+            "children": [
+              { "name": "Våra elavtal" },
+              { "name": "Elpriser" },
+              { "name": "Guide - Hjälp mig välja" }
+            ]
+          },
+          {
+            "name": "Flytt",
+            "children": [
+              { "name": "Flytta elavtal" },
+              { "name": "Att tänka på" },
+              { "name": "Guide - Välj rätt elavtal" }
+            ]
+          },
+          {
+            "name": "Kunskapscenter - Populära kategorier",
+            "children": [
+              { "name": "Sänk din elkostnad" },
+              { "name": "Minska din miljöpåverkan" },
+              { "name": "Smarta hem" },
+              { "name": "Alla kategorier" }
+            ]
+          }
+        ]
+      },
+      { "name": "Nyheter" },
+      { "name": "Kundcenter" },
+      { "name": "Appen Mitt Bixia" }
+    ],
+    "corporate": [
+      {
+        "name": "Elavtal",
+        "children": [
+          { "name": "Våra elavtal" },
+          { "name": "Elmarknaden" },
+          { "name": "Elpriser" },
+          { "name": "Guide - Hjälp mig välja" }
+        ]
+      },
+      {
+        "name": "För producenter",
+        "children": [
+          { "name": "Alternativ 1" },
+          { "name": "Alternativ 2" },
+          { "name": "Alternativ 3" }
+        ]
+      },
+      {
+        "name": "Batterilagring",
+        "children": [
+          { "name": "Alternativ 1" },
+          { "name": "Alternativ 2" },
+          { "name": "Alternativ 3" }
+        ]
+      },
+      {
+        "name": "Kunskapscenter - Populära kategorier",
+        "children": [
+          { "name": "Sänk din elkostnad" },
+          { "name": "Sänk ditt miljöavtryck" },
+          { "name": "Solceller" },
+          { "name": "Elbilsladdning" },
+          { "name": "Batterilagring" }
+        ]
+      },
+      { "name": "Nyheter" },
+      { "name": "Kontakta oss" },
+      { "name": "Logga in" }
+    ]
+  }
+}

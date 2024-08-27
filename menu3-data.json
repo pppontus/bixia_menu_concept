@@ -1,0 +1,66 @@
+{
+    "title": "Meny 3",
+    "categories": {
+      "private": [
+        {
+          "name": "Personal Banking",
+          "children": [
+            {
+              "name": "Accounts",
+              "children": [
+                { "name": "Checking" },
+                { "name": "Savings" },
+                { "name": "Money Market" }
+              ]
+            },
+            {
+              "name": "Loans",
+              "children": [
+                { "name": "Mortgage" },
+                { "name": "Auto" },
+                { "name": "Personal" }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Investments",
+          "children": [
+            { "name": "Stocks" },
+            { "name": "Bonds" },
+            { "name": "Mutual Funds" }
+          ]
+        }
+      ],
+      "corporate": [
+        {
+          "name": "Business Banking",
+          "children": [
+            {
+              "name": "Accounts",
+              "children": [
+                { "name": "Business Checking" },
+                { "name": "Business Savings" }
+              ]
+            },
+            {
+              "name": "Financing",
+              "children": [
+                { "name": "Business Loans" },
+                { "name": "Lines of Credit" },
+                { "name": "Equipment Financing" }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Treasury Services",
+          "children": [
+            { "name": "Cash Management" },
+            { "name": "Fraud Prevention" },
+            { "name": "International Services" }
+          ]
+        }
+      ]
+    }
+  }
