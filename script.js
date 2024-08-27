@@ -25,6 +25,38 @@ function MenuItem({ item }) {
     );
 }
 
+function Header() {
+    return (
+        <div className="bg-gray-800 text-white py-4">
+            <div className="container mx-auto px-4">
+                <h1 className="text-3xl font-bold">Rubrik</h1>
+                <p className="mt-2 text-lg">Här kommer hemsideinnehållet att vara</p>
+            </div>
+        </div>
+    );
+}
+
+function Footer() {
+    const footerLinks = [
+        { name: "Kontakt", children: [] },
+        { name: "Om oss", children: [] },
+        { name: "FAQ", children: [] },
+        { name: "Integritetspolicy", children: [] }
+    ];
+
+    return (
+        <div className="bg-gray-800 text-white py-4 mt-8">
+            <div className="container mx-auto px-4">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    {footerLinks.map((item, index) => (
+                        <MenuItem key={index} item={item} />
+                    ))}
+                </div>
+            </div>
+        </div>
+    );
+}
+
 function App() {
     const [menus, setMenus] = React.useState(null);
     const [selectedTab, setSelectedTab] = React.useState('menu1');
@@ -49,6 +81,7 @@ function App() {
 
     return (
         <div className="min-h-screen flex flex-col">
+            <Header />
             <div className="bg-gray-800 text-white">
                 <div className="container mx-auto px-4">
                     <div className="flex justify-start space-x-1">
@@ -100,6 +133,7 @@ function App() {
                     </div>
                 </div>
             </div>
+            <Footer />
         </div>
     );
 }
