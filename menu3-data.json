@@ -47,5 +47,9 @@
       },
       { "name": "Tom företagskategori" }
     ]
-  }
+  },
+  "footerLinks": [
+    "Meny 3 footer",
+    "Meny 3 footer"
+  ]
 }

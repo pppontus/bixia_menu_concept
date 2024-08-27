@@ -123,5 +123,11 @@
       { "name": "Kontakta oss" },
       { "name": "Logga in" }
     ]
-  }
+  },
+  "footerLinks": [
+    "Meny 1 footer",
+    "Meny 1 footer",
+    "Meny 1 footer",
+    "Meny 1 footer"
+  ]
 }

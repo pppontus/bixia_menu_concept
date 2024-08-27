@@ -139,5 +139,10 @@
       },
       { "name": "Kontakta oss" }
     ]
-  }
+  },
+  "footerLinks": [
+    "Meny 2 footer",
+    "Meny 2 footer",
+    "Meny 2 footer"
+  ]
 }

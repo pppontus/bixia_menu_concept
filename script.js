@@ -25,32 +25,18 @@ function MenuItem({ item }) {
     );
 }
 
-function Header() {
+function Footer({ links }) {
     return (
-        <div className="bg-gray-800 text-white py-4">
-            <div className="container mx-auto px-4">
-                <h1 className="text-3xl font-bold">Rubrik</h1>
-                <p className="mt-2 text-lg">Här kommer hemsideinnehållet att vara</p>
-            </div>
-        </div>
-    );
-}
-
-function Footer() {
-    const footerLinks = [
-        { name: "Kontakt", children: [] },
-        { name: "Om oss", children: [] },
-        { name: "FAQ", children: [] },
-        { name: "Integritetspolicy", children: [] }
-    ];
-
-    return (
-        <div className="bg-gray-800 text-white py-4 mt-8">
-            <div className="container mx-auto px-4">
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                    {footerLinks.map((item, index) => (
-                        <MenuItem key={index} item={item} />
-                    ))}
+        <div className="bg-gray-100 py-6">
+            <div className="container mx-auto px-4 max-w-3xl">
+                <div className="bg-white rounded-lg shadow-md p-6">
+                    <div className="flex flex-col space-y-2">
+                        {links.map((link, index) => (
+                            <a key={index} href="#" className="text-gray-700 hover:underline">
+                                {link}
+                            </a>
+                        ))}
+                    </div>
                 </div>
             </div>
         </div>
@@ -81,9 +67,8 @@ function App() {
 
     return (
         <div className="min-h-screen flex flex-col">
-            <Header />
             <div className="bg-gray-800 text-white">
-                <div className="container mx-auto px-4">
+                <div className="container mx-auto px-4 max-w-3xl">
                     <div className="flex justify-start space-x-1">
                         {Object.entries(menus).map(([key, menu]) => (
                             <button
@@ -103,7 +88,6 @@ function App() {
             </div>
             <div className="flex-grow bg-gray-100">
                 <div className="container mx-auto px-4 py-8 max-w-3xl">
-                    <h1 className="text-3xl font-bold text-custom-blue mb-6">{currentMenu.title}</h1>
                     <div className="mb-6 space-x-4">
                         <button 
                             onClick={() => setSelectedCategory('private')}
@@ -131,9 +115,15 @@ function App() {
                             <MenuItem key={index} item={item} />
                         ))}
                     </div>
+                    {/* Headline and Content Section */}
+                    <div className="mt-8">
+                        <h1 className="text-3xl font-bold text-custom-blue mb-4">Rubrik</h1>
+                        <p className="text-lg text-gray-800">Här kommer hemsideinnehållet att vara.</p>
+                    </div>
                 </div>
             </div>
-            <Footer />
+            {/* Footer */}
+            <Footer links={currentMenu.footerLinks} />
         </div>
     );
 }
