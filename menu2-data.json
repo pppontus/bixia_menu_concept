@@ -8,22 +8,45 @@
           {
             "name": "Våra elavtal och priser",
             "children": [
-              { "name": "Bixia Fast pris" },
-              { "name": "Bixia Rörligt pris" },
-              { "name": "Bixia Timpris" },
-              { "name": "Anvisat pris" }
+              {
+                "name": "Bixia Fast pris"
+              },
+              {
+                "name": "Bixia Rörligt pris"
+              },
+              {
+                "name": "Bixia Timpris"
+              },
+              {
+                "name": "Anvisat pris"
+              }
             ]
           },
-          { "name": "Teckna elavtal" },
-          { "name": "Flytta elavtal" },
-          { "name": "Ändra elavtal" },
-          { "name": "Tilläggstjänster", "children": [{ "name": "Bixia Nära" }] }
+          {
+            "name": "Teckna elavtal"
+          },
+          {
+            "name": "Flytta elavtal"
+          },
+          {
+            "name": "Ändra elavtal"
+          },
+          {
+            "name": "Tilläggstjänster",
+            "children": [
+              {
+                "name": "Bixia Nära"
+              }
+            ]
+          }
         ]
       },
       {
         "name": "Solceller",
         "children": [
-          { "name": "Sälja solel" }
+          {
+            "name": "Sälja solel"
+          }
         ]
       },
       {
@@ -32,10 +55,18 @@
       {
         "name": "Energitjänster",
         "children": [
-          { "name": "Batterilagring" },
-          { "name": "Realtidsmätare" },
-          { "name": "Smart laddning" },
-          { "name": "Tilläggsisolera vinden" }
+          {
+            "name": "Batterilagring"
+          },
+          {
+            "name": "Realtidsmätare"
+          },
+          {
+            "name": "Smart laddning"
+          },
+          {
+            "name": "Tilläggsisolera vinden"
+          }
         ]
       },
       {
@@ -44,177 +75,183 @@
           {
             "name": "Avtalsvillkor och rättigheter",
             "children": [
-              { "name": "Avtalsvillkor och blanketter" },
-              { "name": "Ångerrätt" },
-              { "name": "Säga upp elavtal" },
-              { "name": "Klagomål och reklamation" },
-              { "name": "Så behandlar vi personuppgifter" }
-            ]
-          },
-          { "name": "Driftinformation och felanmälan" },
-          {
-            "name": "Faktura och betalning",
-            "children": [
-              { "name": "Timpris" },
-              { "name": "Portföljförvaltning" },
-              { "name": "Teckna elavtal" }
-            ]
-          },
-          {
-            "name": "Miljötillval",
-            "children": [
-              { "name": "100 % förnybar el" },
-              { "name": "100 % förnybar el från vindkraft" },
-              { "name": "100 % förnybar el från vattenkraft" },
-              { "name": "Bixia Nära Exklusiv - 100 % förnybar el från valfri anläggning" },
-              { "name": "Bra miljöval" }
+              {
+                "name": "Avtalsvillkor och blanketter"
+              },
+              {
+                "name": "Ångerrätt"
+              },
+              {
+                "name": "Säga upp elavtal"
+              },
+              {
+                "name": "Klagomål och reklamation"
+              },
+              {
+                "name": "Så behandlar vi personuppgifter"
+              }
             ]
           },
           {
-            "name": "Ramavtal",
-            "children": [
-              { "name": "Teckna ramavtal för er organisation" },
-              { "name": "Fastighetsägarna" },
-              { "name": "ICA" },
-              { "name": "…" }
-            ]
-          },
-          { "name": "Flytta elavtal" },
-          { "name": "Ändra elavtal" }
-        ]
-      },
-      {
-        "name": "Producera och sälja el",
-        "children": [
-          {
-            "name": "Solel",
-            "children": [
-              { "name": "Lantbruksfastighet" },
-              { "name": "Bostadsrättsförening" },
-              { "name": "Industri och företag" },
-              { "name": "Solpark" },
-              { "name": "Villatak" }
-            ]
-          },
-          { "name": "Vindkraft" },
-          { "name": "Vattenkraft" },
-          { "name": "Producentförmåner" }
-        ]
-      },
-      {
-        "name": "Energitjänster",
-        "children": [
-          { "name": "Bixia Flex" },
-          { "name": "Reglertjänster" },
-          { "name": "Effektoptimering" },
-          { "name": "Batterilagring" },
-          {
-            "name": "Solceller",
-            "children": [
-              { "name": "Bixia Solklart - låna ut ditt tak" },
-              { "name": "Bixia Solpark - köp el direkt från en solpark" }
-            ]
+            "name": "Driftinformation och felanmälan"
           },
           {
-            "name": "Elbilsladdning",
-            "children": [
-              { "name": "Arbetsplats" },
-              { "name": "Flerfamiljsfastighet" },
-              { "name": "Publik laddning" }
-            ]
+            "name": "Faktura och betalning"
           }
         ]
-      },
-      { "name": "Kontakta oss" }
+      }
     ],
     "corporate": [
       {
         "name": "Elavtal",
         "children": [
-          { "name": "Våra elavtal" },
-          { "name": "Bixia Framtid" },
-          { "name": "Rörligt elpris" },
-          { "name": "Timpris" },
-          { "name": "Portföljförvaltning" },
-          { "name": "Teckna elavtal" }
+          {
+            "name": "Våra elavtal",
+            "children": [
+              {
+                "name": "Bixia Framtid"
+              },
+              {
+                "name": "Rörligt elpris"
+              },
+              {
+                "name": "Timpris"
+              },
+              {
+                "name": "Portföljförvaltning"
+              },
+              {
+                "name": "Teckna elavtal"
+              }
+            ]
+          },
+          {
+            "name": "Miljötillval",
+            "children": [
+              {
+                "name": "100 % förnybar el"
+              },
+              {
+                "name": "100 % förnybar el från vindkraft"
+              },
+              {
+                "name": "100 % förnybar el från vattenkraft"
+              },
+              {
+                "name": "Bixia Nära Exklusiv - 100 % förnybar el från valfri anläggning"
+              },
+              {
+                "name": "Bra miljöval"
+              }
+            ]
+          },
+          {
+            "name": "Ramavtal",
+            "children": [
+              {
+                "name": "Teckna ramavtal för er organisation"
+              },
+              {
+                "name": "Fastighetsägarna"
+              },
+              {
+                "name": "ICA"
+              },
+              {
+                "name": "…"
+              }
+            ]
+          },
+          {
+            "name": "Flytta elavtal"
+          },
+          {
+            "name": "Ändra elavtal"
+          }
         ]
       },
-      {
-        "name": "Miljötillval",
-        "children": [
-          { "name": "100 % förnybar el" },
-          { "name": "100 % förnybar el från vindkraft" },
-          { "name": "100 % förnybar el från vattenkraft" },
-          { "name": "Bixia Nära Exklusiv - 100 % förnybar el från valfri anläggning" },
-          { "name": "Bra miljöval" }
-        ]
-      },
-      {
-        "name": "Ramavtal",
-        "children": [
-          { "name": "Teckna ramavtal för er organisation" },
-          { "name": "Fastighetsägarna" },
-          { "name": "ICA" },
-          { "name": "…" }
-        ]
-      },
-      { "name": "Flytta elavtal" },
-      { "name": "Ändra elavtal" },
       {
         "name": "Producera och sälja el",
         "children": [
           {
             "name": "Solel",
             "children": [
-              { "name": "Lantbruksfastighet" },
-              { "name": "Bostadsrättsförening" },
-              { "name": "Industri och företag" },
-              { "name": "Solpark" },
-              { "name": "Villatak" }
+              {
+                "name": "Lantbruksfastighet"
+              },
+              {
+                "name": "Bostadsrättsförening"
+              },
+              {
+                "name": "Industri och företag"
+              },
+              {
+                "name": "Solpark"
+              },
+              {
+                "name": "Villatak"
+              }
             ]
           },
-          { "name": "Vindkraft" },
-          { "name": "Vattenkraft" },
-          { "name": "Producentförmåner" }
+          {
+            "name": "Vindkraft"
+          },
+          {
+            "name": "Vattenkraft"
+          },
+          {
+            "name": "Producentförmåner"
+          }
         ]
       },
       {
         "name": "Energitjänster",
         "children": [
-          { "name": "Bixia Flex" },
-          { "name": "Reglertjänster" },
-          { "name": "Effektoptimering" },
-          { "name": "Batterilagring" },
+          {
+            "name": "Bixia Flex"
+          },
+          {
+            "name": "Reglertjänster"
+          },
+          {
+            "name": "Effektoptimering"
+          },
+          {
+            "name": "Batterilagring"
+          },
           {
             "name": "Solceller",
             "children": [
-              { "name": "Bixia Solklart - låna ut ditt tak" },
-              { "name": "Bixia Solpark - köp el direkt från en solpark" }
+              {
+                "name": "Bixia Solklart - låna ut ditt tak"
+              },
+              {
+                "name": "Bixia Solpark - köp el direkt från en solpark"
+              }
             ]
           },
           {
             "name": "Elbilsladdning",
             "children": [
-              { "name": "Arbetsplats" },
-              { "name": "Flerfamiljsfastighet" },
-              { "name": "Publik laddning" }
+              {
+                "name": "Arbetsplats"
+              },
+              {
+                "name": "Flerfamiljsfastighet"
+              },
+              {
+                "name": "Publik laddning"
+              }
             ]
           }
         ]
       },
-      { "name": "Kontakta oss" }
+      {
+        "name": "Kontakta oss"
+      }
     ]
   },
   "footerLinks": [
-    "Kunskapsbank",
-    "Press",
-    "Sociala medier",
-    "Om Bixia",
-    "Jobba hos oss",
-    "Årsredovisning",
-    "Om webbplatsen",
-    "Logga in/Logga ut",
-    "Languages",
-    "Sök"
+    "Footerlänkar här"
   ]
 }
