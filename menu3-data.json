@@ -6,8 +6,7 @@
         "name": "Elavtal",
         "children": [
           {
-            "name": "Våra elavtal",
-            "children": []
+            "name": "Våra elavtal"
           },
           {
             "name": "Elpriser"
@@ -86,34 +85,6 @@
         "name": "Kundservice"
       },
       {
-        "name": "Om Bixia",
-        "children": [
-          {
-            "name": "Nyheter"
-          },
-          {
-            "name": "Bixia information"
-          },
-          {
-            "name": "Jobb"
-          },
-          {
-            "name": "Hållbarhet och miljö",
-            "children": [
-              {
-                "name": "Ursprungsmärkning"
-              },
-              {
-                "name": "Bixia Klimathjälte"
-              },
-              {
-                "name": "Bixia Miljofond"
-              }
-            ]
-          }
-        ]
-      },
-      {
         "name": "App iOS"
       },
       {
@@ -187,10 +158,10 @@
   },
   "footerLinks": [
     "Nyheter",
-    "Press",
+    "Om Bixia",
     "Hållbarhet",
-    "Jobb",
-    "Cookies",
+    "Jobba hos oss",
+    "Avtal och information",
     "---",
     "Facebook",
     "Instagram",
