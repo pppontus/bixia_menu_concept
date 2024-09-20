@@ -1,5 +1,5 @@
 {
-  "title": "Meny 3",
+  "title": "Meny",
   "categories": {
     "private": [
       {
@@ -7,103 +7,194 @@
         "children": [
           {
             "name": "Våra elavtal",
-            "children": [
-              { "name": "Bixia Timpris" },
-              { "name": "Bixia Rörligt" },
-              { "name": "Bixia Fast Pris" },
-              { "name": "Jämför elavtal" }
-            ]
+            "children": []
           },
-          { "name": "Flytt" },
-          { "name": "Elpriser" },
-          { "name": "Guide - Vilket är bästa elavtalet för mig?" }
+          {
+            "name": "Elpriser"
+          },
+          {
+            "name": "Flytt"
+          },
+          {
+            "name": "Guide - Vilket är bästa elavtalet för mig?"
+          }
         ]
       },
       {
         "name": "Solceller",
         "children": [
-          { "name": "Solcellspaket" },
-          { "name": "Information om solceller" },
-          { "name": "Guide - Sparar jag på solceller?" }
+          {
+            "name": "Köp solceller"
+          },
+          {
+            "name": "Om solceller"
+          },
+          {
+            "name": "Guide - Sparar jag på solceller?"
+          }
         ]
       },
       {
         "name": "Batterilagring",
         "children": [
-          { "name": "Köp batteripaket" },
-          { "name": "Information om batterilagring" },
-          { "name": "Guide - Sparar jag på batterilagring?" }
+          {
+            "name": "Köp batteripaket"
+          },
+          {
+            "name": "Om batterilagring"
+          },
+          {
+            "name": "Guide - Sparar jag på batterilagring?"
+          }
         ]
       },
       {
         "name": "Elbilsladdning",
         "children": [
-          { "name": "Köp elbilsladdare" },
-          { "name": "Smart laddning" },
-          { "name": "Guide - Är elbil för mig?" }
+          {
+            "name": "Köp elbilsladdare"
+          },
+          {
+            "name": "Om elbilsladdning"
+          },
+          {
+            "name": "Smart laddning"
+          },
+          {
+            "name": "Guide - Är elbil för mig?"
+          }
         ]
       },
       {
-        "name": "Kunskapscenter - Populära kategorier",
+        "name": "Kunskapscenter",
         "children": [
-          { "name": "Sänk din elkostnad" },
-          { "name": "Minska din miljöpåverkan" },
-          { "name": "Allt om elbilsladdning" },
-          { "name": "Alla kategorier" }
+          {
+            "name": "Elavtal"
+          },
+          {
+            "name": "Solceller"
+          },
+          {
+            "name": "Bettarilagring"
+          },
+          {
+            "name": "Alla kategorier"
+          }
         ]
       },
-      { "name": "Kundcenter" },
-      { "name": "Appen Mitt Bixia" }
+      {
+        "name": "Kundservice"
+      },
+      {
+        "name": "Om Bixia",
+        "children": [
+          {
+            "name": "Nyheter"
+          },
+          {
+            "name": "Bixia information"
+          },
+          {
+            "name": "Jobb"
+          },
+          {
+            "name": "Hållbarhet och miljö",
+            "children": [
+              {
+                "name": "Ursprungsmärkning"
+              },
+              {
+                "name": "Bixia Klimathjälte"
+              },
+              {
+                "name": "Bixia Miljofond"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "App iOS"
+      },
+      {
+        "name": "App Android"
+      }
     ],
     "corporate": [
       {
         "name": "Alternativ 1",
         "children": [
-          { "name": "Alternativ 1" },
-          { "name": "Alternativ 2" },
-          { "name": "Alternativ 3" }
+          {
+            "name": "Alternativ 1"
+          },
+          {
+            "name": "Alternativ 2"
+          },
+          {
+            "name": "Alternativ 3"
+          }
         ]
       },
       {
         "name": "Alternativ 2",
         "children": [
-          { "name": "Alternativ 1" },
-          { "name": "Alternativ 2" },
-          { "name": "Alternativ 3" }
+          {
+            "name": "Alternativ 1"
+          },
+          {
+            "name": "Alternativ 2"
+          },
+          {
+            "name": "Alternativ 3"
+          }
         ]
       },
       {
         "name": "Alternativ 3",
         "children": [
-          { "name": "Alternativ 1" },
-          { "name": "Alternativ 2" },
-          { "name": "Alternativ 3" }
+          {
+            "name": "Alternativ 1"
+          },
+          {
+            "name": "Alternativ 2"
+          },
+          {
+            "name": "Alternativ 3"
+          }
         ]
       },
       {
         "name": "Alternativ 4",
         "children": [
-          { "name": "Alternativ 1" },
-          { "name": "Alternativ 2" },
-          { "name": "Alternativ 3" }
+          {
+            "name": "Alternativ 1"
+          },
+          {
+            "name": "Alternativ 2"
+          },
+          {
+            "name": "Alternativ 3"
+          }
         ]
       },
-      { "name": "Nyheter" },
-      { "name": "Kontakta oss" }
+      {
+        "name": "Nyheter"
+      },
+      {
+        "name": "Kontakta oss"
+      }
     ]
   },
   "footerLinks": [
     "Nyheter",
     "Press",
     "Hållbarhet",
-    "Samarbeten",
-    "Jobba hos oss",
-    "Villkor",
+    "Jobb",
+    "Cookies",
     "---",
-    "Schysst elhandel",
     "Facebook",
     "Instagram",
-    "Youtube",
-    "Linkedin"
+    "LinkedIn",
+    "Youtube"
   ]
 }
