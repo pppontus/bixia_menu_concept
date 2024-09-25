@@ -46,8 +46,9 @@ function Footer({ links, isCorporateTheme }) {
 function App() {
     const [menus, setMenus] = React.useState(null);
     const [selectedTab, setSelectedTab] = React.useState('menu1');
-    const [selectedCategory, setSelectedCategory] = React.useState('private');
+    const [selectedCategory, setSelectedCategory] = React.useState(null);
     const [isCorporateTheme, setIsCorporateTheme] = React.useState(false);
+    const [error, setError] = React.useState(null);
 
     React.useEffect(() => {
         // Load all menu data upfront
@@ -57,23 +58,61 @@ function App() {
             fetch('menu3-data.json').then(res => res.json())
         ]).then(([menu1, menu2, menu3]) => {
             setMenus({ menu1, menu2, menu3 });
-        }).catch(error => console.error('Error loading menu data:', error));
+            // Set the initial selected category to the first category of the first menu
+            setSelectedCategory(Object.keys(menu1.categories)[0]);
+        }).catch(error => {
+            console.error('Error loading menu data:', error);
+            setError('Failed to load menu data. Please try refreshing the page.');
+        });
     }, []);
 
     React.useEffect(() => {
-        // Switch the theme when the category changes
-        if (selectedCategory === 'corporate') {
-            setIsCorporateTheme(true);
-        } else {
-            setIsCorporateTheme(false);
+        // When the selected tab changes, update the selected category to the first category of the new menu
+        if (menus && menus[selectedTab]) {
+            setSelectedCategory(Object.keys(menus[selectedTab].categories)[0]);
         }
+    }, [selectedTab, menus]);
+
+    React.useEffect(() => {
+        // Switch the theme when the category changes
+        setIsCorporateTheme(selectedCategory === 'corporate');
     }, [selectedCategory]);
+
+    if (error) {
+        return <div className="text-center mt-8 text-xl text-red-600">{error}</div>;
+    }
 
     if (!menus) {
         return <div className="text-center mt-8 text-xl text-gray-600">Loading...</div>;
     }
 
     const currentMenu = menus[selectedTab];
+
+    const getCategoryButtonClass = (category) => `
+        px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-custom-blue 
+        transition-colors duration-200 ${
+            selectedCategory === category 
+                ? 'bg-custom-blue text-white' 
+                : `bg-${isCorporateTheme ? 'gray-600' : 'white'} 
+                   text-${isCorporateTheme ? 'gray-300' : 'gray-700'} 
+                   hover:bg-${isCorporateTheme ? 'gray-500' : 'gray-50'}`
+        }
+    `;
+
+    const categoryLabels = {
+        'private': 'Privat',
+        'corporate': 'Företag',
+        'kunskapsbank': 'Kunskapsbank'
+    };
+
+    const renderMenuItems = () => {
+        if (currentMenu && currentMenu.categories && selectedCategory && currentMenu.categories[selectedCategory]) {
+            return currentMenu.categories[selectedCategory].map((item, index) => (
+                <MenuItem key={index} item={item} />
+            ));
+        }
+        return null;
+    };
 
     return (
         <div className={`min-h-screen flex flex-col ${isCorporateTheme ? 'bg-gray-700 text-gray-300' : 'bg-gray-100 text-gray-800'} transition-colors duration-500 ease-in-out`}>
@@ -99,31 +138,18 @@ function App() {
             <div className="flex-grow">
                 <div className="container mx-auto px-4 py-8 max-w-3xl">
                     <div className="mb-6 space-x-4">
-                        <button 
-                            onClick={() => setSelectedCategory('private')}
-                            className={`px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-custom-blue transition-colors duration-200 ${
-                                selectedCategory === 'private' 
-                                    ? 'bg-custom-blue text-white' 
-                                    : `bg-${isCorporateTheme ? 'gray-600' : 'white'} text-${isCorporateTheme ? 'gray-300' : 'gray-700'} hover:bg-${isCorporateTheme ? 'gray-500' : 'gray-50'}`
-                            }`}
-                        >
-                            Privat
-                        </button>
-                        <button 
-                            onClick={() => setSelectedCategory('corporate')}
-                            className={`px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-custom-blue transition-colors duration-200 ${
-                                selectedCategory === 'corporate' 
-                                    ? 'bg-custom-blue text-white' 
-                                    : `bg-${isCorporateTheme ? 'gray-600' : 'white'} text-${isCorporateTheme ? 'gray-300' : 'gray-700'} hover:bg-${isCorporateTheme ? 'gray-500' : 'gray-50'}`
-                            }`}
-                        >
-                            Företag
-                        </button>
+                        {Object.keys(currentMenu.categories).map((category) => (
+                            <button 
+                                key={category}
+                                onClick={() => setSelectedCategory(category)}
+                                className={getCategoryButtonClass(category)}
+                            >
+                                {categoryLabels[category] || category}
+                            </button>
+                        ))}
                     </div>
                     <div className="bg-white rounded-lg shadow-md p-6">
-                        {currentMenu.categories[selectedCategory].map((item, index) => (
-                            <MenuItem key={index} item={item} />
-                        ))}
+                        {renderMenuItems()}
                     </div>
                     {/* Headline and Content Section */}
                     <div className="mt-8">
@@ -132,7 +158,6 @@ function App() {
                     </div>
                 </div>
             </div>
-            {/* Footer */}
             <Footer links={currentMenu.footerLinks} isCorporateTheme={isCorporateTheme} />
         </div>
     );
